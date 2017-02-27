@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025122541D8E44F0008D3C0E /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 025122521D8E44F0008D3C0E /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		02B3E6571D893B3000476DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B3E6561D893B3000476DD2 /* main.m */; };
 		02B3E65A1D893B3000476DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B3E6591D893B3000476DD2 /* AppDelegate.m */; };
 		02B3E65D1D893B3000476DD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B3E65C1D893B3000476DD2 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025122511D8E44F0008D3C0E /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		025122521D8E44F0008D3C0E /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		025122531D8E44F0008D3C0E /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		02B3E6521D893B3000476DD2 /* PayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B3E6561D893B3000476DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02B3E6581D893B3000476DD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		02B3E6611D893B3000476DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02B3E6641D893B3000476DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02B3E6661D893B3000476DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02B3E66C1D8943FE00476DD2 /* PayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PayDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,10 @@
 		02B3E6541D893B3000476DD2 /* PayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				025122511D8E44F0008D3C0E /* GTMBase64.h */,
+				025122521D8E44F0008D3C0E /* GTMBase64.m */,
+				025122531D8E44F0008D3C0E /* GTMDefines.h */,
+				02B3E66C1D8943FE00476DD2 /* PayDemo.entitlements */,
 				02B3E6581D893B3000476DD2 /* AppDelegate.h */,
 				02B3E6591D893B3000476DD2 /* AppDelegate.m */,
 				02B3E65B1D893B3000476DD2 /* ViewController.h */,
@@ -110,6 +119,12 @@
 				TargetAttributes = {
 					02B3E6511D893B3000476DD2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = MV9CCWC8NT;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -152,6 +167,7 @@
 				02B3E65D1D893B3000476DD2 /* ViewController.m in Sources */,
 				02B3E65A1D893B3000476DD2 /* AppDelegate.m in Sources */,
 				02B3E6571D893B3000476DD2 /* main.m in Sources */,
+				025122541D8E44F0008D3C0E /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PayDemo/PayDemo.entitlements;
 				INFOPLIST_FILE = PayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pcidata.PayDemo;
@@ -276,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PayDemo/PayDemo.entitlements;
 				INFOPLIST_FILE = PayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pcidata.PayDemo;
@@ -302,6 +320,7 @@
 				02B3E66B1D893B3000476DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
