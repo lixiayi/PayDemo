@@ -38,7 +38,13 @@
     //检查用户是否可进行某种卡的支付，是否支持Amex、MasterCard、Visa与银联四种卡，根据自己项目的需要进行检测
     NSArray *supportedNetworks = @[PKPaymentNetworkAmex, PKPaymentNetworkMasterCard,PKPaymentNetworkVisa,PKPaymentNetworkChinaUnionPay];
     if (![PKPaymentAuthorizationViewController canMakePaymentsUsingNetworks:supportedNetworks]) {
-        NSLog(@"没有绑定支付卡");
+        NSLog(@"wallet没有绑定支付卡");
+        
+        // 创建一个设置按钮;当用户点击的时候跳转到添加银行卡的界面;
+        PKPaymentButton *button = [PKPaymentButton buttonWithType:PKPaymentButtonTypeSetUp style:PKPaymentButtonStyleWhiteOutline];
+        button.frame = CGRectMake(200, 200, 100, 44);
+        [button addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
         return;
     }
     
@@ -93,6 +99,12 @@
     view.delegate = self;
     [self presentViewController:view animated:YES completion:nil];
     
+}
+
+// 绑卡
+- (void)jump{
+    PKPassLibrary *library = [[PKPassLibrary alloc] init];
+    [library openPaymentSetup];
 }
 
 

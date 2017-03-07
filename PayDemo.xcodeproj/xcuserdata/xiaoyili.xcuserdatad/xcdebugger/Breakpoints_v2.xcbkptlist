@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PayDemo/ViewController.m"
-            timestampString = "509872622.80766"
+            timestampString = "510547977.332195"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "-paymentAuthorizationViewController:didAuthorizePayment:completion:"
             landmarkType = "7">
             <Locations>
@@ -26,11 +26,11 @@
                   moduleName = "PayDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xiaoyili/Documents/demo/PayDemo/PayDemo/ViewController.m"
-                  timestampString = "509872622.875729"
+                  timestampString = "510548429.889817"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "155"
-                  endingLineNumber = "155"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
                   offsetFromSymbolStart = "956">
                </Location>
                <Location
@@ -41,11 +41,11 @@
                   moduleName = "PayDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xiaoyili/Documents/demo/PayDemo/PayDemo/ViewController.m"
-                  timestampString = "509872622.877453"
+                  timestampString = "510548429.892071"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "155"
-                  endingLineNumber = "155"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PayDemo/ViewController.m"
-            timestampString = "509872622.80766"
+            timestampString = "510547977.332195"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "-paymentAuthorizationViewController:didAuthorizePayment:completion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,12 +74,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PayDemo/ViewController.m"
-            timestampString = "509872622.80766"
+            timestampString = "510547977.332195"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "-paymentAuthorizationViewController:didAuthorizePayment:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PayDemo/ViewController.m"
+            timestampString = "510547999.625044"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-butClick:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
